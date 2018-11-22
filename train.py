@@ -48,6 +48,9 @@ model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['acc'])
 
 X_train,X_test,Y_train,Y_test=train_test_split(sentences,newtargets)
 
+history=model.fit(X_train,Y_train,epochs=10,)
+model.save('newtextmodel.h5')
+
 
 """
 from keras.layers import Dense,LSTM,Embedding
