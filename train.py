@@ -7,6 +7,7 @@ And the model will start training on the given dataset.
 
 '''
 
+"""
 from keras.layers import Dense,LSTM,Embedding
 from keras.utils import to_categorical
 from keras.models import Sequential
@@ -112,4 +113,3 @@ model.save('newtextmodel.h5')
 
 plt.plot(history.history['loss'])
 plt.show()
-"""
