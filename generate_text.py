@@ -9,6 +9,10 @@ to generate text in the style of training data.
 
 '''
 
+import matplotlib.pyplot as plt
+plt.plot(history.history['loss'])
+plt.show()
+
 def generate_test():
     import time
     sentence='Our first principle was: pack and contagion, the contagion of the pack, such is the path becoming-animal takes. But a second principle seemed to tell us the opposite: wherever there is multipli- city, you will also find an exceptional individual, and it is with that individ- ual that an alliance must be made in order to become-animal. There may be no such thing as a lone wolf, but there is a leader of the pack, a master of the pack, or else the old deposed head of the pack now living alone, there is the Loner, and there is the Demon.'
