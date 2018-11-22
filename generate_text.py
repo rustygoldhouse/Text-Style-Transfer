@@ -32,7 +32,7 @@ words_to_code=dict((i,j) for j,i in enumerate(vocab))
 code_to_words=dict((i,j) for i,j in enumerate(vocab))
 
 def generate_test():
-    sentence='His room, a proper human'
+    sentence='Our first principle was: pack and contagion, the contagion of the pack, such is the path becoming-animal takes. But a second principle seemed to tell us the opposite: wherever there is multipli- city, you will also find an exceptional individual, and it is with that individ- ual that an alliance must be made in order to become-animal. There may be no such thing as a lone wolf, but there is a leader of the pack, a master of the pack, or else the old deposed head of the pack now living alone, there is the Loner, and there is the Demon.'
     sentence=sentence.split()
     sentence=[words_to_code[w] for w in sentence]
     sentence=np.array(sentence)
